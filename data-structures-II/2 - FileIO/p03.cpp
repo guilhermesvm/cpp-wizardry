@@ -5,6 +5,7 @@ using namespace std;
 
 int main(){
     string filename;
+
     cout << "Input file: ";
     getline(cin, filename);
 
@@ -18,12 +19,12 @@ int main(){
     ofstream saida; //Output file stream
     cout << "Output file: ";
     getline(cin, filename);
+
     saida.open(filename);
     if(!saida){
         cout << "Deu ruim!\n";
         return 2;
     }
-
 
 
     string line;

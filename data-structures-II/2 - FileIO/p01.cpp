@@ -5,6 +5,7 @@ using namespace std;
 
 int main(){
     ifstream arq;       //Input file stream
+
     arq.open("numeros.in");     //Abre o arquivo
     if(!arq){
         cout << "Could not open.";
@@ -12,6 +13,7 @@ int main(){
     }
 
     int num;
+    
     while(arq >> num){      //Enquanto houver dados a serem extraídos do stream
         cout << num << " " << num * 2 << endl;
     }

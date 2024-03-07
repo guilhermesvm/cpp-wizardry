@@ -5,6 +5,7 @@ using namespace std;
 
 int main(){
     string filename;
+
     cout << "File name: ";
     getline(cin, filename);
 
